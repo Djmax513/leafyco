@@ -1,3 +1,4 @@
+import React from 'react';
 import '../global.css';
 import 'expo-dev-client';
 import { ActionSheetProvider } from '@expo/react-native-action-sheet';

@@ -1,4 +1,5 @@
 const { hairlineWidth, platformSelect } = require('nativewind/theme');
+const colors = require('./colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,10 +14,6 @@ module.exports = {
         ring: withOpacity('ring'),
         background: withOpacity('background'),
         foreground: withOpacity('foreground'),
-        primary: {
-          DEFAULT: withOpacity('primary'),
-          foreground: withOpacity('primary-foreground'),
-        },
         secondary: {
           DEFAULT: withOpacity('secondary'),
           foreground: withOpacity('secondary-foreground'),
@@ -41,6 +38,7 @@ module.exports = {
           DEFAULT: withOpacity('card'),
           foreground: withOpacity('card-foreground'),
         },
+        ...colors
       },
       borderWidth: {
         hairline: hairlineWidth(),
