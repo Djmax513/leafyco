@@ -1,16 +1,12 @@
-import React from 'react'
-import { Stack } from 'expo-router'
-import { StyleSheet, View } from 'react-native'
-
-import { ScreenContent } from '~/components/ScreenContent';
+import { Stack } from 'expo-router';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
 
 export default function ProfilePage() {
   return (
     <>
       <Stack.Screen options={{ title: 'Perfil' }} />
-      <View style={styles.container}>
-        
-      </View>
+      <View style={styles.container} />
     </>
   );
 }

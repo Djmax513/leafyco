@@ -1,4 +1,4 @@
-import { Link, Tabs } from 'expo-router';
+import { Tabs } from 'expo-router';
 
 import { HeaderButton } from '../../components/HeaderButton';
 import { TabBarIcon } from '../../components/TabBarIcon';
@@ -19,14 +19,16 @@ export default function TabLayout() {
           bottom: 25,
           marginHorizontal: 64,
           borderRadius: 120,
-          backgroundColor: COLORS.darkGray
+          backgroundColor: COLORS.darkGray,
         },
       }}>
       <Tabs.Screen
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <TabBarIcon variant='material-icons' name={"home-variant"} color={color} />,
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon variant="material-icons" name="home-variant" color={color} />
+          ),
           headerShown: false,
         }}
       />
@@ -34,14 +36,26 @@ export default function TabLayout() {
         name="plants"
         options={{
           title: 'Catálogo Plantas',
-          tabBarIcon: ({ color, focused }) => <TabBarIcon variant='material-icons' name={focused ? "flower-tulip" : "flower-tulip-outline"} color={color} />,
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon
+              variant="material-icons"
+              name={focused ? 'flower-tulip' : 'flower-tulip-outline'}
+              color={color}
+            />
+          ),
         }}
       />
       <Tabs.Screen
         name="profile"
         options={{
           title: 'Perfil',
-          tabBarIcon: ({ color, focused }) => <TabBarIcon variant='ion-icons' name={focused ? "person" : "person-outline"} color={color} />,
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon
+              variant="ion-icons"
+              name={focused ? 'person' : 'person-outline'}
+              color={color}
+            />
+          ),
         }}
       />
     </Tabs>
