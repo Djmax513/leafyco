@@ -92,11 +92,11 @@ export function WeatherDisplay() {
 
     if(wheatherInfo) {
         return (
-            <View className='flex-row items-center'>
-                <WheatherIconsSwitcher type={wheatherInfo?.weather[0].main} />
+            <View className='flex-row items-center justify-center gap-3'>
                 <Emphasis color={COLORS.primaryDarker}>
                     {Math.floor(wheatherInfo?.main.temp)} C°
                 </Emphasis>
+                <WheatherIconsSwitcher type={wheatherInfo?.weather[0].main} />
             </View>
         )
     }
@@ -107,7 +107,7 @@ export function WeatherDisplay() {
 
 const styles = StyleSheet.create({
     weatherIcon: {
-        width: 55,
-        height: 55
+        width: 35,
+        height: 35
     }
 })

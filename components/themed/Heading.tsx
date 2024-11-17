@@ -13,7 +13,7 @@ export function Title({ children, color }: TitleProps) {
             <RNText style={{
                 color: color ?? COLORS.lightGray,
                 fontWeight: 800,
-                fontSize: 36,
+                fontSize: 32,
             }}>
                 {children}
             </RNText>
@@ -41,7 +41,7 @@ export function Emphasis({ children, color }: TitleProps) {
             <RNText style={{
                 color: color ?? COLORS.lightGray,
                 fontWeight: 700,
-                fontSize: 28,
+                fontSize: 22,
             }}>
                 {children}
             </RNText>

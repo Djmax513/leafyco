@@ -17,6 +17,7 @@ export default function TabLayout() {
           height: 64,
           position: 'absolute',
           bottom: 25,
+          zIndex: 0,
           marginHorizontal: 64,
           borderRadius: 120,
           backgroundColor: COLORS.darkGray,
@@ -35,7 +36,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="plants"
         options={{
-          title: 'Catálogo Plantas',
+          title: 'Adicionar nova planta',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               variant="material-icons"

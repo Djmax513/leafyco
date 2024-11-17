@@ -27,8 +27,8 @@ export default function ImagePicker({ name, imgSrc, setImgSrc, control, rounded 
     <View className="w-full">
       <Pressable onPress={pickImage}>
         <View
-          className="mx-auto h-52 w-52 overflow-hidden rounded-lg bg-gray"
-          style={{ borderRadius: rounded && '9999px' }}>
+          className="mx-auto overflow-hidden rounded-lg bg-gray"
+          style={{ borderRadius: rounded && '9999px', width: 220, height: 220 }}>
           {imgSrc ? (
             <Image source={{ uri: imgSrc.uri }} style={styles.image} />
           ) : (

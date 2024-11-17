@@ -1,5 +1,6 @@
 module.exports = {
   primary: '#579A88',
+  light: '#ECEDEE',
   primaryLight: '#A2B66F',
   primaryDark: '#376258',
   primaryDarker: '#274B41',
@@ -10,6 +11,5 @@ module.exports = {
   gray: '#38393A',
   lightGray: '#D9D9D9',
   darkGray: '#282c2f',
-  light: '#ECEDEE',
   dark: '#1A1B1C',
 };
